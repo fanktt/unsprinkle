@@ -48,10 +48,12 @@ const Image = styled.img`
 const Tags = styled.ul`
   white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 4px 0;
 `;
 
 const Tag = styled.li`
-  display: inline-block;
+  display: inline;
   padding: 4px 8px;
   margin-right: 8px;
   background: var(--color-gray-300);
@@ -59,8 +61,9 @@ const Tag = styled.li`
   font-weight: 475;
   color: var(--color-gray-800);
 
-  white-space: nowrap;
-  overflow-wrap: break-word;
+  &:not(:last-of-type) {
+    margin-right: 8px;
+  }
 `;
 
 export default PhotoGridItem;
