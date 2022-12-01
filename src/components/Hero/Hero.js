@@ -17,7 +17,7 @@ const Hero = () => {
                   /images/hero-img@2x.jpg 2x,
                   /images/hero-img@3x.jpg 3x'
         />
-        <HeroImage src='/images/hero-img.jpg' />
+        <HeroImage alt="Hero image - a cat" src='/images/hero-img.jpg' />
       </picture>
       <Swoop src='/swoop.svg' />
     </Wrapper>
